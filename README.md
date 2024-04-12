@@ -1,17 +1,17 @@
 # A Kernel Seedling
-TODO: intro
+Program that outputs the # of current running processes on machine
 
 ## Building
 ```shell
-TODO: cmd for build
+make
 ```
 
 ## Running
 ```shell
-TODO: cmd for running binary
+sudo insmod proc_count.ko
+cat /proc/count
 ```
-TODO: results?
-
+The module is inserted into the kernel by the first command, and the number of processes that are now running is printed to the terminal window by the second.
 ## Cleaning Up
 ```shell
 TODO: cmd for cleaning the built binary
